@@ -52,8 +52,6 @@ unzip(zipfile = "./getcleandata/projectdataset.zip", exdir = "./getcleandata")
       # 2.2 Create vector for defining ID, mean, and sd
         mean_and_std <- (grepl("activityID", colNames) |
                          grepl("subjectID", colNames) |
-                         # THIS WAS COPIED FROM https://github.com/wdluft/getting-and-cleaning-data-week-4-project
-# SHOULD NOT BE ACCEPTED AS A NEW SUBMISSION
                          grepl("mean..", colNames) |
                          grepl("std...", colNames)
         )
